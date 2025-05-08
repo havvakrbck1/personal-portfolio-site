@@ -1,4 +1,4 @@
-/* Genel sıfırlama ve temel ayarlar */
+
 * {
   margin: 0;
   padding: 0;
@@ -6,116 +6,106 @@
 }
 
 html {
-  scroll-behavior: smooth; /* Sayfa içi linklerde yumuşak kaydırma (ilerisi için) */
+  scroll-behavior: smooth; 
 }
 
 body {
-  font-family: 'Poppins', sans-serif; /* Seçtiğin modern font */
-  background: linear-gradient(to bottom right, #0072ff, #00c6ff, #00ffff); /* Senin mavi/cyan gradientin (istersen ayarla) */
-  /* Veya Referanstaki gibi: */
-  /* background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
+  font-family: 'Poppins', sans-serif; 
+  background: linear-gradient(to bottom right, #0072ff, #00c6ff, #00ffff); 
   color: #ffffff;
   line-height: 1.6;
-  /* Body'nin tüm yüksekliği kaplaması gerekmeyebilir, hero-section halledecek */
 }
 
-/* Ana Hero Bölümü */
 .hero-section {
-  min-height: 100vh; /* Ekran yüksekliğini kapla */
+  min-height: 100vh; 
   display: flex;
-  justify-content: center; /* İçeriği dikeyde ortala */
-  align-items: center; /* İçeriği yatayda ortala */
-  padding: 2rem; /* Kenarlardan biraz boşluk */
-  text-align: center; /* İçindeki tüm metinleri ortala */
+  justify-content: center; 
+  align-items: center; 
+  padding: 2rem; 
+  text-align: center; 
 }
 
 .hero-content {
   display: flex;
-  flex-direction: column; /* Öğeleri alt alta sırala */
-  align-items: center; /* Öğeleri yatayda ortala */
-  max-width: 700px; /* İçeriğin çok genişlemesini önle */
+  flex-direction: column; 
+  align-items: center; 
+  max-width: 700px; 
 }
 
-/* Profil Fotoğrafı */
 .profile-photo {
-  width: 150px; /* Boyutunu ayarla */
-  height: 150px; /* Boyutunu ayarla */
-  border-radius: 50%; /* Dairesel yap */
-  border: 4px solid #00ffff; /* Senin cyan kenarlığın */
+  width: 150px; 
+  height: 150px; 
+  border-radius: 50%; 
+  border: 4px solid #00ffff; 
   object-fit: cover;
   object-position: center;
-  margin-bottom: 2rem; /* Altındaki isimle arasına boşluk */
-  box-shadow: 0 5px 15px rgba(0, 255, 255, 0.2); /* Hafif cyan glow efekti */
+  margin-bottom: 2rem; 
+  box-shadow: 0 5px 15px rgba(0, 255, 255, 0.2); 
 }
 
-/* İsim */
 .hero-name {
-  font-size: 3rem; /* Büyük font boyutu (ayarlayabilirsin) */
-  font-weight: 700; /* Kalın font */
-  letter-spacing: 2px; /* Harf arası boşluk */
-  text-transform: uppercase; /* Tamamı büyük harf */
+  font-size: 3rem; 
+  font-weight: 700; /
+  letter-spacing: 2px; 
+  text-transform: uppercase; 
   margin-bottom: 0.5rem;
   color: #ffffff;
 }
 
-/* Tagline */
 .hero-tagline {
-  font-size: 1rem; /* Daha küçük font boyutu */
-  font-weight: 400; /* Normal kalınlık */
-  text-transform: uppercase; /* Tamamı büyük harf */
-  letter-spacing: 1.5px; /* Harf arası boşluk */
-  color: rgba(255, 255, 255, 0.8); /* Saf beyaz yerine hafif soluk */
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: uppercase; 
+  letter-spacing: 1.5px; 
+  color: rgba(255, 255, 255, 0.8); 
   margin-bottom: 2.5rem;
 }
 
-/* Ana Eylem Butonu */
 .cta-button {
-  display: inline-block; /* Satır içi blok eleman */
-  padding: 0.8rem 2rem; /* İç boşluklar */
-  border: 2px solid #00ffff; /* Cyan kenarlık */
-  border-radius: 50px; /* Yuvarlak kenarlar (veya daha az) */
-  color: #ffffff; /* Yazı rengi beyaz */
-  background-color: transparent; /* Arka plan saydam */
+  display: inline-block; 
+  padding: 0.8rem 2rem; 
+  border: 2px solid #00ffff; 
+  border-radius: 50px; 
+  color: #ffffff; /
+  background-color: transparent; 
   font-size: 0.9rem;
   font-weight: 600;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 1px;
-  transition: all 0.3s ease; /* Yumuşak geçiş */
+  transition: all 0.3s ease; 
   margin-bottom: 2.5rem;
 }
 
 .cta-button:hover,
 .cta-button:focus {
-  background-color: #00ffff; /* Üzerine gelince cyan arka plan */
-  color: #001F3F; /* Koyu mavi yazı */
-  transform: translateY(-3px); /* Hafif yukarı kalkma */
-  box-shadow: 0 4px 10px rgba(0, 255, 255, 0.3); /* Gölge */
+  background-color: #00ffff; 
+  color: #001F3F; 
+  transform: translateY(-3px); 
+  box-shadow: 0 4px 10px rgba(0, 255, 255, 0.3); 
   outline: none;
 }
 
-/* Sosyal Medya İkonları */
 .social-icons {
   display: flex;
-  gap: 1.5rem; /* İkonlar arası boşluk */
+  gap: 1.5rem; 
 }
 
 .social-icons a {
-  color: #ffffff; /* İkon rengi beyaz */
-  font-size: 1.5rem; /* İkon boyutu */
+  color: #ffffff;
+  font-size: 1.5rem; 
   text-decoration: none;
   transition: all 0.3s ease;
 }
 
 .social-icons a:hover {
-  color: #00ffff; /* Üzerine gelince cyan renk */
-  transform: scale(1.15) translateY(-2px); /* Hafif büyüme ve yukarı kalkma */
+  color: #00ffff; 
+  transform: scale(1.15) translateY(-2px); 
 }
 
-/* Responsive Tasarım (Basit örnek) */
 @media (max-width: 768px) {
   .hero-name {
-    font-size: 2.5rem; /* Küçük ekranda ismi biraz küçült */
+    font-size: 2.5rem; 
   }
 
   .hero-tagline {
@@ -148,12 +138,10 @@ body {
    }
 }
 
-/* Eski main ve footer'ı şimdilik gizle */
 .main-content,
 footer {
   display: none;
 }
-/* Animasyon tanımı */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -165,7 +153,6 @@ footer {
   }
 }
 
-/* Animasyon sınıfı */
 .fade-in-up {
   opacity: 0;
   animation: fadeInUp 1s ease-out forwards;
