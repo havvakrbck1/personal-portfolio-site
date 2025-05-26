@@ -20,3 +20,4 @@ git clone https://github.com/havvakrbck1/personal-portfolio-site.git
 cd personal-portfolio-site
 open index.html
 
+![Homepage Screenshot](assets/homepage.png)
