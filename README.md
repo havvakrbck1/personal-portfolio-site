@@ -1,7 +1,22 @@
-# 🌐 My Personal Portfolio Site
+# Personal Portfolio Site
 
-This is a personal website to showcase my work and projects.
+A personal website to showcase projects, skills, and contact information.
 
-## 📸 Preview
+## Features
+- Responsive design
+- Project showcase
+- Contact form
 
-![Screenshot](assets/screenshot.png)
+## Technologies Used
+- HTML
+- CSS
+- JavaScript
+
+## Installation
+
+```bash
+git clone https://github.com/havvakrbck1/personal-portfolio-site.git
+cd personal-portfolio-site
+open index.html
+
+![Homepage Screenshot](assets/screenshot.png)
